@@ -108,4 +108,8 @@ venv.bak/
 *.pkl
 *-solved.ipynb
 
+# Plaintext reference solutions for the local grader. Students only get the
+# scrambled grader_answers.dat. Regenerate with: python build_grader_answers.py
+grader_solutions/
+
 .idea/

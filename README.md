@@ -12,8 +12,33 @@ These assignments work seamlessly with the class and do not require any of the m
 - The assignments use [Jupyter Notebook](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html), which provides an intuitive flow easier than the original MATLAB/OCTAVE assignments.
 - The original assignment instructions have been completely re-written and the parts which used to reference MATLAB/OCTAVE functionality have been changed to reference its `python` counterpart.
 - The re-written instructions are now embedded within the Jupyter Notebook along with the `python` starter code. For each assignment, all work is done solely within the notebook.
-- The `python` assignments can be submitted for grading. They were tested to work perfectly well with the original Coursera grader that is currently used to grade the MATLAB/OCTAVE versions of the assignments. 
-- After each part of a given assignment, the Jupyter Notebook contains a cell which prompts the user for submitting the current part of the assignment for grading.  
+- After each part of a given assignment, the Jupyter Notebook contains a cell which checks the current part of the assignment for correctness.
+- Grading is done **locally and offline** (see [Grading your solutions](#grading-your-solutions) below). No Coursera login, email address, or submission token is required.
+
+ ## Grading your solutions
+
+Each notebook builds a `grader` object and you attach your functions to it, then
+call `grader.grade()`:
+
+```python
+grader[1] = warmUpExercise
+grader.grade()
+```
+
+`grader.grade()` runs your functions against a bundled set of reference outputs
+and prints a pass/fail table for every part of the exercise. Everything runs on
+your machine &mdash; nothing is uploaded and no token or email is needed.
+
+The reference outputs are stored (lightly scrambled) in `grader_answers.dat`.
+Instructors can inspect or regenerate the bundle:
+
+```
+python build_grader_answers.py --extract   # write grader_solutions/*.py
+python build_grader_answers.py             # rebuild grader_answers.dat from grader_solutions/
+```
+
+The plaintext `grader_solutions/` directory is git-ignored so students who clone
+the repository only receive the scrambled bundle.
 
  ## Online workspace
  
