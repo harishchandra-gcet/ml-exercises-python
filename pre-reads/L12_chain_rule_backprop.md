@@ -101,7 +101,7 @@ $y = x^2$):
 $$
 \frac{dy}{dx}
 = \underbrace{\frac{\partial y}{\partial u}\frac{du}{dx}}_{\text{path through }u}
-+ \underbrace{\frac{\partial y}{\partial v}\frac{dv}{dx}}_{\text{path through }v}
+\;+\; \underbrace{\frac{\partial y}{\partial v}\frac{dv}{dx}}_{\text{path through }v}
 = v\cdot 1 + u\cdot 1 = x + x = 2x
 $$
 
