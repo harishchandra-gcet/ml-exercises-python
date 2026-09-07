@@ -288,14 +288,14 @@ Linearity: $E[aX + b] = a\,E[X] + b$, always.
 ### 3.3 Variance and standard deviation (the spread)
 
 $$
-\operatorname{Var}(X) = E\big[(X - E[X])^2\big]
+\mathrm{Var}(X) = E\big[(X - E[X])^2\big]
 = E[X^2] - (E[X])^2,
 \qquad
-\operatorname{std}(X) = \sqrt{\operatorname{Var}(X)}
+\mathrm{std}(X) = \sqrt{\mathrm{Var}(X)}
 $$
 
 Variance is the mean squared distance from the mean. For the fair die,
-$\operatorname{Var}(X) = \tfrac{1}{6}\sum (k - 3.5)^2 \approx 2.92$.
+$\mathrm{Var}(X) = \tfrac{1}{6}\sum (k - 3.5)^2 \approx 2.92$.
 
 ```python
 X.mean(axis=0)
@@ -358,7 +358,7 @@ $P(\text{cause} \mid \text{evidence})$.
 5. A bag holds 3 red and 2 blue balls; you draw two without replacement.
    Find $P(\text{2nd red} \mid \text{1st red})$.
 6. $X$ is 0 with probability $0.75$ and 4 with probability $0.25$. Find $E[X]$ and
-   $\operatorname{Var}(X)$.
+   $\mathrm{Var}(X)$.
 
 <details>
 <summary>Answers</summary>
@@ -370,7 +370,7 @@ $P(\text{cause} \mid \text{evidence})$.
 4. $f'(x) = \dfrac{2x}{x^2+1}$.
 5. Two red and two blue remain, so $P = 2/4 = 0.5$.
 6. $E[X] = 1$;
-   $\operatorname{Var}(X) = (0-1)^2(0.75) + (4-1)^2(0.25) = 0.75 + 2.25 = 3$.
+   $\mathrm{Var}(X) = (0-1)^2(0.75) + (4-1)^2(0.25) = 0.75 + 2.25 = 3$.
 
 </details>
 
