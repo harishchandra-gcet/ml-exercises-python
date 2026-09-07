@@ -77,13 +77,11 @@ Each row of the matrix is dotted with the vector, giving one output number per
 row:
 
 $$
-A x =
-\begin{bmatrix} 1 & 2 \\ 1 & 3 \\ 1 & 5 \end{bmatrix}
+A x
+= \begin{bmatrix} 1 & 2 \\ 1 & 3 \\ 1 & 5 \end{bmatrix}
 \begin{bmatrix} 2 \\ 1 \end{bmatrix}
-=
-\begin{bmatrix} (1)(2)+(2)(1) \\ (1)(2)+(3)(1) \\ (1)(2)+(5)(1) \end{bmatrix}
-=
-\begin{bmatrix} 4 \\ 5 \\ 7 \end{bmatrix}
+= \begin{bmatrix} (1)(2)+(2)(1) \\ (1)(2)+(3)(1) \\ (1)(2)+(5)(1) \end{bmatrix}
+= \begin{bmatrix} 4 \\ 5 \\ 7 \end{bmatrix}
 $$
 
 ```python
@@ -103,13 +101,11 @@ $p \times q$ and $B$ is $q \times r$, then $AB$ is $p \times r$:
 $$
 \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
 \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}
-=
-\begin{bmatrix}
+= \begin{bmatrix}
 1\cdot5 + 2\cdot7 & 1\cdot6 + 2\cdot8 \\
 3\cdot5 + 4\cdot7 & 3\cdot6 + 4\cdot8
 \end{bmatrix}
-=
-\begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}
+= \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}
 $$
 
 Order matters: in general $AB \neq BA$.
@@ -136,11 +132,10 @@ For any $m \times n$ matrix $A$, the product $A^\top A$ is **square** ($n \times
 n$) and **symmetric**. Using the $A$ from 1.6:
 
 $$
-A^\top A =
-\begin{bmatrix} 1 & 1 \\ 2 & 3 \end{bmatrix}
+A^\top A
+= \begin{bmatrix} 1 & 1 \\ 2 & 3 \end{bmatrix}
 \begin{bmatrix} 1 & 2 \\ 1 & 3 \end{bmatrix}
-=
-\begin{bmatrix} 2 & 5 \\ 5 & 13 \end{bmatrix}
+= \begin{bmatrix} 2 & 5 \\ 5 & 13 \end{bmatrix}
 $$
 
 Entry $(i, j)$ of $A^\top A$ is the dot product of column $i$ and column $j$ of
@@ -356,8 +351,8 @@ $P(\text{cause} \mid \text{evidence})$.
 ## Check yourself
 
 1. $a = (2, -1, 2)$. Find $\|a\|$ and $a \cdot a$.
-2. $A = \begin{bmatrix} 1 & 4 \\ 1 & 6 \end{bmatrix}$, $x = (1, 0.5)$. Compute
-   $Ax$. What are the dimensions of $A^\top A$?
+2. $A$ has rows $[1,\ 4]$ and $[1,\ 6]$, and $x = (1, 0.5)$. Compute $Ax$. What
+   are the dimensions of $A^\top A$?
 3. $f(x) = 5x^3$. Find $f'(x)$ and $f'(2)$.
 4. $f(x) = \ln(x^2 + 1)$. Use the chain rule to find $f'(x)$.
 5. A bag holds 3 red and 2 blue balls; you draw two without replacement.

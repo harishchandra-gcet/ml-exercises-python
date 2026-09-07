@@ -124,15 +124,16 @@ acting on a distribution — is the part to be comfortable with beforehand.
 
 ## Check yourself
 
-1. Is $\begin{bmatrix} 0.5 & 0.5 \\ 0.3 & 0.8 \end{bmatrix}$ a valid transition
+1. Is the matrix with rows $[0.5,\ 0.5]$ and $[0.3,\ 0.8]$ a valid transition
    matrix? Why or why not?
 2. With the weather $P$ above and $\pi_0 = [0, 1]$ (certainly rainy), compute
    $\pi_1$ and $\pi_2$.
 3. From day 2's $[0.72, 0.28]$, compute day 3 and confirm it matches the table.
 4. Verify that $\pi^\star = [2/3, 1/3]$ also reproduces the Rain component after
    one step.
-5. A chain has $P = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$ and starts at
-   $[1, 0]$. Does it converge to a stationary distribution? What does it do?
+5. A chain has transition matrix with rows $[0,\ 1]$ and $[1,\ 0]$ (every step
+   it flips state) and starts at $[1, 0]$. Does it converge to a stationary
+   distribution? What does it do?
 
 <details>
 <summary>Answers</summary>
