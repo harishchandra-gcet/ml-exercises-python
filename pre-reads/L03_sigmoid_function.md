@@ -42,10 +42,7 @@ def sigmoid(z):
 - **Limits:** $\sigma(z) \to 1$ as $z \to +\infty$, and $\sigma(z) \to 0$ as
   $z \to -\infty$.
 - **Midpoint:** $\sigma(0) = \tfrac12$.
-- **Rotational symmetry about $(0, \tfrac12)$:**
-  $$
-  \sigma(-z) = 1 - \sigma(z)
-  $$
+- **Rotational symmetry about $(0, \tfrac12)$:** &nbsp; $\sigma(-z) = 1 - \sigma(z)$.
   Check with the table: $\sigma(-2) = 0.119$ and $1 - \sigma(2) = 1 - 0.881 = 0.119$.
 - **Monotonic:** strictly increasing everywhere, so it is one-to-one and
   invertible. Its inverse is the *logit*,
